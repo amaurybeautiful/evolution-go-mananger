@@ -24,6 +24,15 @@ export default defineConfig({
     strictPort: true,
     cors: true,
   },
+    preview: {
+    host: true,
+    port: 5174,
+    strictPort: true,
+    allowedHosts: [
+      'docker-evo-evolution-go-manager.dxq9e0.easypanel.host',
+      '.easypanel.host',
+    ],
+  },
   optimizeDeps: {
     include: [
       'react',
